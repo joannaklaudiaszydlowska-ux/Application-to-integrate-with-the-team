@@ -6,8 +6,7 @@ export default function Home() {
     </main>
   );
 }
-git add .
-git commit -m "Initial Next.js setup"
+
 
 
 
