@@ -4,8 +4,10 @@ export default function Home() {
       <h1>Hello Joanna!</h1>
       <p>The project is running.</p>
     </main>
-  );
+  )
 }
+
+
 
 
 
