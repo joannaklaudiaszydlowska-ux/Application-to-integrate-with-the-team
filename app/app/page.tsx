@@ -3,13 +3,15 @@
 import { useState } from "react";
 
 export default function Home() {
-  const [started, setStarted] =
-    useState(false);
+  const [sessionId, setSessionId] =
+  useState("");
 
-  function handleSession() {
-    setStarted(true);
-  }
+function handleSession() {
+  const id =
+    crypto.randomUUID();
 
+  setSessionId(id);
+}
   return (
     <main
       style={{
@@ -31,14 +33,22 @@ export default function Home() {
         Start Session
       </button>
 
-      {started && (
-        <p>
-          ✅ Session Started
-        </p>
+          {sessionId && (
+        <>
+          <p>
+            ✅ Session Started
+          </p>
+
+          <p>
+            Session ID:
+            {sessionId}
+          </p>
+        </>
       )}
     </main>
   );
 }
+
 
 
 
