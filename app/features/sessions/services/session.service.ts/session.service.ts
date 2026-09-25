@@ -18,10 +18,23 @@ export class SessionService {
       sessionId,
     };
   }
+
+  async getSession(
+    sessionId: string
+  ) {
+    return {
+      success: true,
+      sessionId,
+      status: "live",
+    };
+  }
 }
 
 export const sessionService =
   new SessionService();
+
+ 
+
 
 
 
