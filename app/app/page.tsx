@@ -1,6 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import {
+  startSessionAction,
+} from "@/actions/sessions/start-session";
+
 
 export default function Home() {
   const [sessionId, setSessionId] =
@@ -12,6 +16,8 @@ function handleSession() {
 
   setSessionId(id);
 }
+
+
   return (
     <main
       style={{
@@ -48,6 +54,10 @@ function handleSession() {
     </main>
   );
 }
+<p>
+  Status:
+  Live
+</p>
 
 
 
