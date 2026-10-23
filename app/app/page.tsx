@@ -40,27 +40,25 @@ function handleSession() {
       </button>
 
           {sessionId && (
-        <>
-          <p>
-            ✅ Session Started
-          </p>
+  <>
+    <p>
+      ✅ Session Started
+    </p>
 
-          <p>
-            Session ID:
-            {sessionId}
-          </p>
-        </>
-      )}
-    </main>
-  );
+    <p>
+      Session ID:
+      {sessionId}
+    </p>
+
+    <p>
+      Status:
+      Live
+    </p>
+  </>
+)}
+</main>
+);
 }
-<p>
-  Status:
-  Live
-</p>
-
-
-
 
      
 
